@@ -2,6 +2,11 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --font-body: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color-text: rgba(255, 255, 255, 0.87);
+  --color-bg: #242424;
+  --color-accent: #646cff;
+  --color-accent-hover: #535bf2;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -23,11 +28,17 @@ a:hover {
 }
 
 body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: var(--font-body);
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+/* This ensures consistent sizing across components */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 h1 {
