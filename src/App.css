@@ -145,11 +145,18 @@ div.example {
 
 div.example-top {
   height: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .example-top img {
-  width: 100%;
+  width: 90%;
   height: auto;
+}
+
+.example-top video {
+  width: 100%;
 }
 
 .example:nth-child(3n + 1) .example-top {
@@ -172,6 +179,7 @@ div.example-bottom {
   color: #333;
   margin: 1rem 0 0 10%;
   font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .example-bottom h2 {
