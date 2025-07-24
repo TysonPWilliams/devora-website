@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function Hero() {
 
     return (
-        <section className="hero">
+        <section className="hero slide-in-bottom">
             <h1 className="hero-text">Built for Results.<br/> Designed to Impress</h1>
             <Link to="/work" className="hero-btn">see our work</Link>
         </section>

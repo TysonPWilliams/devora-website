@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import Header from './assets/components/Header.jsx'
 import Hero from './assets/components/Hero.jsx'
+import Examples from './assets/components/Examples.jsx'
 
 
 function App() {
@@ -14,7 +15,10 @@ function App() {
         <Route
           path='/'
           element={
-            <Hero />
+            <>
+              <Hero />
+              <Examples />
+            </>
           }
         />
       </Routes>

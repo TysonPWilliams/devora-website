@@ -91,6 +91,7 @@ img.symbol {
   font-size: 7rem;
   font-weight: 500;
   color: #94e558;
+  text-shadow: 2px 2px 5px #333;   
 }
 
 .hero-btn {
@@ -112,5 +113,81 @@ a.hero-btn:hover {
   background-color: #4193f6;
   color: #333;
   transition: background-color 0.2s ease;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(75%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-bottom {
+  animation: slideInFromBottom 1s ease-out forwards;
+}
+
+/* Examples Section */
+
+.examples-wrapper {
+  height: 60vh;
+  display: flex;
+}
+
+div.example {
+  width: 33vw;
+  display: flex;
+  flex-direction: column;
+}
+
+div.example-top {
+  height: 60vw;
+}
+
+.example-top img {
+  width: 100%;
+  height: auto;
+}
+
+.example:nth-child(3n + 1) .example-top {
+  background-color: #ffe5cc;
+}
+
+.example:nth-child(3n + 2) .example-top {
+  background-color: #fffde1;
+}
+
+.example:nth-child(3n + 3) .example-top {
+  background-color: #e6fff5;
+}
+
+div.example-bottom {
+  height: 20vw;
+}
+
+.example-bottom p {
+  color: #333;
+  margin: 1rem 0 0 10%;
+  font-weight: 500;
+}
+
+.example-bottom h2 {
+  margin: 0 0 0 10%;
+  color: #184780;
+}
+
+.example:nth-child(3n + 1) .example-bottom {
+  background-color: #d0e6ff;
+}
+
+.example:nth-child(3n + 2) .example-bottom {
+  background-color: #e8e6fa;
+}
+
+.example:nth-child(3n + 3) .example-bottom {
+  background-color: #ffe6eb;
 }
 
