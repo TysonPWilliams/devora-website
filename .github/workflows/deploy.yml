@@ -15,8 +15,6 @@ jobs:
       name: github-pages
       url: ${{ steps.build-publish.outputs.page_url }}
     steps:
-     
-    - uses: checkout@v4
 
     - id: build-publish
       uses: bitovi/github-actions-react-to-github-pages@v1.2.4
