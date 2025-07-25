@@ -77,6 +77,11 @@ img.symbol {
 
 /* Hero Section */
 
+.hero-container {
+  height: 80vh;
+  display: flex;
+}
+
 .hero {
   height: 80vh;
   display: flex;
@@ -113,6 +118,18 @@ a.hero-btn:hover {
   background-color: #4193f6;
   color: #333;
   transition: background-color 0.2s ease;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: auto
+}
+
+.hero-logo img {
+  width: 15vw;
 }
 
 @keyframes slideInFromBottom {
