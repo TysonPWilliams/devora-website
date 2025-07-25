@@ -133,12 +133,35 @@ a.hero-btn:hover {
 /* Examples Section */
 
 .examples-wrapper {
-  height: 60vh;
   display: flex;
+  overflow: hidden;
+  position: relative;
 }
 
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: scrollLeft 40s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.examples-wrapper:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+
+
 div.example {
-  width: 33vw;
+  flex: 0 0 33vw;
+  height: 70vh;
   display: flex;
   flex-direction: column;
 }

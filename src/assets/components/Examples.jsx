@@ -1,41 +1,48 @@
 import mockup1 from '../CoastalCrete-Mockup.png'
 import mockup2 from '../SatoshiFund-Mockup.png'
-import mockup3 from '../portfolio-mockup.mp4'
+import mockup3 from '../tysonw-mockup.png'
 
 function Examples() {
+
+    const items = [
+        {
+            img: mockup1,
+            title: "Coastal Crete",
+            desc: "Website Development"
+        },
+        {
+            img: mockup2,
+            title: "SatoshiFund",
+            desc: "Web App Development"
+        },
+        {
+            img: mockup3,
+            title: "TysonW Website",
+            desc: "Website Refresh"
+        }
+    ]
+
+    const renderExample = (item, index) => (
+        <div className="example" key={index}>
+            <div className="example-top">
+                {item.video ? (
+                    <video autoPlay loop playsInline muted src={item.video} />
+                ) : (
+                    <img src={item.img} alt={item.title} />
+                )}
+            </div>
+            <div className="example-bottom">
+                <p>{item.title}</p>
+                <h2>{item.desc}</h2>
+            </div>
+        </div>
+    )
+
+
     return (
         <section className="examples-wrapper">
-            <div className="example">
-                <div className="example-top">
-                    <img src={mockup1} alt="" />
-                </div>
-                <div className="example-bottom">
-                    <p>Coastal Crete</p>
-                    <h2>Website Development</h2>
-                </div>
-            </div>
-            <div className="example">
-                <div className="example-top">
-                    <img src={mockup2} alt="" />
-                </div>
-                <div className="example-bottom">
-                    <p>SatoshiFund</p>
-                    <h2>Web App Development</h2>
-                </div>
-            </div>
-            <div className="example">
-                <div className="example-top">
-                    <video
-                        autoPlay
-                        loop
-                        playsInline
-                        src={mockup3}
-                    />
-                </div>
-                <div className="example-bottom">
-                    <p>TysonW</p>
-                    <h2>Website Refresh</h2>
-                </div>
+            <div className="marquee-track">
+                {[...items, ...items].map(renderExample)}
             </div>
         </section>
     )
