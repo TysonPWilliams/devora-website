@@ -1,5 +1,5 @@
-import logo from '../devora-logo2.png'
-import logo1 from '../devora-pic.png'
+import logo from '../images/devora-logo2.png'
+import logo1 from '../images/devora-pic.png'
 import { Link, useLocation } from 'react-router-dom'
 
 function Header() {

@@ -1,6 +1,6 @@
-import mockup1 from '../CoastalCrete-Mockup.png'
-import mockup2 from '../SatoshiFund-Mockup.png'
-import mockup3 from '../tysonw-mockup.png'
+import mockup1 from '../images/CoastalCrete-Mockup.png'
+import mockup2 from '../images/SatoshiFund-Mockup.png'
+import mockup3 from '../images/tysonw-mockup.png'
 
 function Examples() {
 

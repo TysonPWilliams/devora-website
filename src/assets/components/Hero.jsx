@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import devoraLogo from "../devora-logo.gif"
+import devoraLogo from "../images/devora-logo.gif"
 
 function Hero() {
 
