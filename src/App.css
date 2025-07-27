@@ -58,7 +58,8 @@ img.symbol {
   display: inline-block;
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   transition: color 0.3s ease;
   padding: 0.5rem 1rem;
   margin: 0;
@@ -80,20 +81,21 @@ img.symbol {
 .hero-container {
   height: 80vh;
   display: flex;
+  margin-left: 3vw;
 }
 
 .hero {
   height: 80vh;
   display: flex;
   flex-direction: column;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 .hero-text {
   padding-left: 2vw;
   display: flex;
   align-items: center;
-  font-size: 7rem;
+  font-size: 8rem;
   font-weight: 500;
   color: #94e558;
   text-shadow: 2px 2px 5px #333;   
@@ -174,8 +176,6 @@ a.hero-btn:hover {
   animation-play-state: paused;
 }
 
-
-
 div.example {
   flex: 0 0 33vw;
   height: 70vh;
@@ -211,8 +211,36 @@ div.example-top {
   background-color: #e6fff5;
 }
 
-div.example-bottom {
+.example-bottom {
   height: 20vw;
+  display: flex;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10%;
+  /* align-items: center; */
+  flex: 2;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.right-side img {
+  width: 4vw;
+  height: auto;
+  transform: rotate(-20deg);
+}
+
+.right-side img:hover {
+  transition: 0.8s;
+  width: 6vw;
+  height: auto;
 }
 
 .example-bottom p {
@@ -238,4 +266,33 @@ div.example-bottom {
 .example:nth-child(3n + 3) .example-bottom {
   background-color: #ffe6eb;
 }
+
+/* Agency Intro Section */
+
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #9970be;
+}
+
+.intro-container p {
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 10vw;
+}
+
+.intro-container .hero-btn {
+  background-color: #8745c2;
+  color: #fff;
+}
+
+.intro-btn {
+  display: flex;
+  margin: -5vw auto 0 5vw;
+  margin-right: auto;
+}
+
 

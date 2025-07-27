@@ -1,8 +1,11 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Roboto Condensed", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --font-body: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* --font-body: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* --font-body: "Winky Rough", sans-serif; */
+  --font-body: "Smooch Sans", sans-serif;
   --color-text: rgba(255, 255, 255, 0.87);
   --color-bg: #242424;
   --color-accent: #646cff;
@@ -31,6 +34,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   font-family: var(--font-body);
+  font-weight: 600;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;

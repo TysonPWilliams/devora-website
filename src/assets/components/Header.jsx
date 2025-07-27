@@ -27,9 +27,6 @@ function Header() {
                     </Link>
                     <img src={logo1} className='symbol'/>
                 </div>
-
-
-
             </div>
         </header >
 
